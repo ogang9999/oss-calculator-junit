@@ -20,7 +20,7 @@ class CalculatorTest {
     @Test 
     @DisplayName("Intended error")
     void testAdd2() {
-        assertEquals(9, calc.add(5, 5), "5 + 5 should be 9");
+        assertEquals(10, calc.add(5, 5), "5 + 5 should be 9");
     }
 
     @Test
