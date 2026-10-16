@@ -62,5 +62,8 @@ public class Main {
         }
 
         scanner.close();
+
+
+        // .jar excution: cmd> java -jar <file_name>
     }
 }
