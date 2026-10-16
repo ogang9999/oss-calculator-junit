@@ -17,6 +17,11 @@ class CalculatorTest {
     void testAdd() {
         assertEquals(10, calc.add(5, 5), "5 + 5 should be 10");
     }
+    @Test 
+    @DisplayName("Intended error")
+    void testAdd2() {
+        assertEquals(9, calc.add(5, 5), "5 + 5 should be 9");
+    }
 
     @Test
     @DisplayName("Testing function isPrime with 5")
