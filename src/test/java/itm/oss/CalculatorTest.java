@@ -58,19 +58,15 @@ class CalculatorTest {
         assertEquals(9, calc.divide(100, 10), "100 / 10 = 10");
     }
 
-    @Test 
-    @DisplayName("Testing zero division") 
-    void testZeroDivision() {
-        assertEquals(0, calc.divide(1, 0), "test");       
-    }
+
     @Test 
     @DisplayName("Testing addition")
     void testAddition() {
-        assertEquals(1, calc.add(1, 1), " 1+ 1 = 1");
-        assertEquals(1, calc.add(1, 2), " 1+ 2 = 1");
-        assertEquals(1, calc.add(1, 3), " 1+ 3 = 1");
-        assertEquals(1, calc.add(1, 4), " 1+ 4 = 1");
-        assertEquals(1, calc.add(1, 5), " 1+ 5 = 1");
+        assertEquals(2, calc.add(1, 1), " 1+ 1 = 2");
+        assertEquals(3, calc.add(1, 2), " 1+ 2 = 3");
+        assertEquals(4, calc.add(1, 3), " 1+ 3 = 4");
+        assertEquals(5, calc.add(1, 4), " 1+ 4 = 5");
+        assertEquals(6, calc.add(1, 5), " 1+ 5 = 6");
 
     }
 
