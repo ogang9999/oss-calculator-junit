@@ -3,6 +3,7 @@ package itm.oss;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -55,6 +56,22 @@ class CalculatorTest {
     @DisplayName("Testing divide") 
     void divisionTest() {
         assertEquals(9, calc.divide(100, 10), "100 / 10 = 10");
+    }
+
+    @Test 
+    @DisplayName("Testing zero division") 
+    void testZeroDivision() {
+        assertEquals(0, calc.divide(1, 0), "test");       
+    }
+    @Test 
+    @DisplayName("Testing addition")
+    void testAddition() {
+        assertEquals(1, calc.add(1, 1), " 1+ 1 = 1");
+        assertEquals(1, calc.add(1, 2), " 1+ 2 = 1");
+        assertEquals(1, calc.add(1, 3), " 1+ 3 = 1");
+        assertEquals(1, calc.add(1, 4), " 1+ 4 = 1");
+        assertEquals(1, calc.add(1, 5), " 1+ 5 = 1");
+
     }
 
 }
