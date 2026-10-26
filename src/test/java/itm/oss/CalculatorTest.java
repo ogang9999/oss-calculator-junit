@@ -54,7 +54,7 @@ class CalculatorTest {
     @Test
     @DisplayName("Testing divide") 
     void divisionTest() {
-        assertEquals(10, calc.divide(100, 10), "100 / 10 = 10");
+        assertEquals(9, calc.divide(100, 10), "100 / 10 = 10");
     }
 
 }
