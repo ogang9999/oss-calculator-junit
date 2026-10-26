@@ -45,4 +45,11 @@ protected boolean isPrime(int num){
     }
     return true;
 }
+
+public int modul(int a, int b) {
+    if(b == 0) {
+        throw new IllegalArgumentException("no way");
+    }
+    return a % b;
+}
 }
