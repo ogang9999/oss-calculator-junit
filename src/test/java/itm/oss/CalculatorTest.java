@@ -51,4 +51,10 @@ class CalculatorTest {
         assertFalse(calc.isPrime(-5), "There are not negative primer numbers.");
     }
 
+    @Test
+    @DisplayName("Testing divide") 
+    void divisionTest() {
+        assertEquals(10, calc.divide(100, 10), "100 / 10 = 10");
+    }
+
 }
